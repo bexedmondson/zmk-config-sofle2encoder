@@ -56,7 +56,6 @@
     behaviors {
         caps: caps {
             compatible = "zmk,behavior-caps-word";
-            label = "CAPS";
             #binding-cells = <0>;
             continue-list = <POUND MINUS BACKSPACE UNDERSCORE>;
         };
@@ -67,28 +66,24 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F14 &to 0>;
-            label = "MOVE_LAYER";
         };
 
         switch_to_nav: switch_to_nav {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F15 &to 2>;
-            label = "SWITCH_TO_NAV";
         };
 
         switch_to_game: switch_to_game {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F17 &to 4>;
-            label = "SWITCH_TO_GAME";
         };
 
         switch_to_symbols: switch_to_symbols {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F16 &to 1>;
-            label = "SWITCH_TO_SYMBOLS";
         };
     };
 
