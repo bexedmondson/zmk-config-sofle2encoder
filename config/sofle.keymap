@@ -135,9 +135,7 @@
                                   &trans       &trans    &trans      &trans       &trans    &trans  &trans     &trans     &trans         &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>,
-                <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         raise_layer {
@@ -151,14 +149,16 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&switch_to_game  &trans      &trans     &trans       &trans       &trans                      &trans     &trans           &trans    &trans            &trans   &trans
-&trans           &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans                      &kp PG_UP  &kp C_AC_BACK    &kp UP    &kp C_AC_FORWARD  &kp N0   &trans
-&trans           &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK                    &kp PG_DN  &kp LEFT         &kp DOWN  &kp RIGHT         &kp DEL  &kp BSPC
-&trans           &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &trans    &trans  &trans     &trans           &trans    &trans            &trans   &trans
-                             &trans     &trans       &trans       &trans    &trans    &trans  &trans     &switch_to_base  &trans    &trans
+&switch_to_game  &trans      &trans     &trans       &trans       &trans                    &trans     &trans           &trans    &trans            &trans   &trans
+&trans           &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans                    &kp PG_UP  &kp C_AC_BACK    &kp UP    &kp C_AC_FORWARD  &kp N0   &trans
+&trans           &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &none                     &kp PG_DN  &kp LEFT         &kp DOWN  &kp RIGHT         &kp DEL  &kp BSPC
+&trans           &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans  &trans    &trans  &trans     &trans           &trans    &trans            &trans   &trans
+                             &trans     &trans       &trans       &trans  &trans    &trans  &trans     &switch_to_base  &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp PG_UP PAGE_DOWN>,
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         adjust_layer {
