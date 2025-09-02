@@ -49,7 +49,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "CAPS";
             #binding-cells = <0>;
-            continue-list = <POUND MINUS ACE UNDERSCORE>;
+            continue-list = <POUND MINUS BACKSPACE UNDERSCORE>;
         };
         
 		scroll_encoder: sensor_rotate_kp {
