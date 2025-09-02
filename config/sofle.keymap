@@ -111,7 +111,7 @@
                           &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 1         &mo 2             &kp BACKSPACE  &switch_to_nav  &kp LALT   &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp UP DOWN>, <&inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&scroll_encoder SCRL_UP SCRL_DOWN>, <&inc_dec_kp LEFT RIGHT>;
         };
 
         lower_layer {
