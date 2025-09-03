@@ -114,7 +114,7 @@
                           &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 1         &mo 2             &kp BACKSPACE  &switch_to_nav  &kp LALT   &kp RGUI
             >;
 
-            sensor-bindings = <&scroll_encoder SCRL_UP SCRL_DOWN>, <&inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&scroll_encoder SCRL_DOWN SCRL_UP>, <&inc_dec_kp LEFT RIGHT>;
         };
 
         lower_layer {
@@ -159,7 +159,7 @@
                              &trans     &trans       &trans       &trans    &trans    &trans  &trans     &switch_to_base  &trans    &trans
             >;
 
-            sensor-bindings = <&scroll_encoder SCRL_UP SCRL_DOWN>, <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&scroll_encoder SCRL_DOWN SCRL_UP>, <&inc_dec_kp PG_UP PG_DN>;
         };
 
         adjust_layer {
@@ -193,7 +193,7 @@
             >;
 
             sensor-bindings =
-                <&scroll_encoder SCRL_UP SCRL_DOWN>,
+                <&scroll_encoder SCRL_DOWN SCRL_UP>,
                 <&inc_dec_kp LEFT RIGHT>;
         };
     };
